@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ตารางสินค้า</title>
+    <link rel="stylesheet" href="styles2.css" />
+</head>
+<body class="p-4 flex flex-col items-center">
+
+    <h2 class="text-3xl font-bold mb-4">เพิ่ม/แก้ไข สินค้า</h2>
+
+    <form id="product-form" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto">
+        <input type="text" id="pro_name" class="input input-bordered input-accent w-full" placeholder="ชื่อสินค้า" required>
+        <input type="text" id="pro_des" class="input input-bordered input-accent w-full" placeholder="รายละเอียด" required>
+        <input type="number" id="pro_inch" class="input input-bordered input-accent w-full" placeholder="ขนาด (นิ้ว)" required>
+        <input type="number" id="pro_price" class="input input-bordered input-accent w-full" placeholder="ราคา" required>
+        <input type="number" id="pro_qty" class="input input-bordered input-accent w-full" placeholder="จำนวน" required>
+        <input type="text" id="pro_gift" class="input input-bordered input-accent w-full" placeholder="ของแถม">
+
+        <div class="flex gap-2 justify-center col-span-full">
+            <button type="button" class="btn btn-accent px-4" onclick="addProduct()">เพิ่มสินค้า</button>
+            <button type="button" class="btn btn-success px-4" onclick="saveProduct()" style="display: none;">บันทึก</button>
+        </div>
+    </form>
+    
+
+    <h2 class="text-3xl font-bold mt-8 mb-4">📦 รายการสินค้า</h2>
+
+    <div class="overflow-x-auto w-full max-w-4xl">
+        <table class="table table-zebra w-full">
+            <thead>
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <th>รายละเอียด</th>
+                    <th>ขนาด (นิ้ว)</th>
+                    <th>ราคา</th>
+                    <th>จำนวน</th>
+                    <th>ของแถม</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+            <tbody id="product-table"></tbody>
+        </table>
+    </div>
+
+    <script src="it.js"></script>
+</body>
+</html>

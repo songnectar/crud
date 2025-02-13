@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 20px;
+  text-align: center;
+  background-image: url('2912.jpeg');
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 10px rgba(19, 18, 18, 0.192);
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+  transition: 0.3s;
+}
+
+/* ปุ่ม */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #e68900;
+}
+
+ 
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ee1b48;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f8072f, #f7b756);
+  text-shadow: 2px 2px 6px rgba(0, 123, 255, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ff6347, #ff1493);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #ffffff;
+  display: inline-block;
+  animation: slideIn 0.8s ease-out;
+}
+
+/* เพิ่มแอนิเมชันการเลื่อน (Slide In) */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+ 
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.save-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button:focus {
+  outline: none;
+}

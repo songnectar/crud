@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('9672.jpeg');
+    background-size: cover; /* ทำให้ภาพพื้นหลังเต็มพื้นที่ */
+    background-position: center; /* จัดภาพให้ตรงกลาง */
+    background-attachment: fixed; /* ทำให้ภาพพื้นหลังไม่เลื่อนเมื่อเลื่อนหน้า */
+}
+
+
+
+.profile-img {
+    width: 150px; /* กำหนดความกว้างของรูป */
+    height: 150px; /* กำหนดความสูงของรูป */
+    border-radius: 50%; /* ทำให้รูปภาพกลม */
+    border: 4px solid #fff; /* กรอบสีขาวรอบรูป */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับรูป */
+    object-fit: cover; /* ทำให้รูปภาพไม่ยืดและครอบคลุมพื้นที่ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาที่เด่นขึ้นเมื่อ hover */
+}
+
+
+
+
+.profile-container {
+    width: 60%; /* ลดขนาดความกว้างลง */
+    max-width: 800px; /* จำกัดขนาดสูงสุด */
+    background-color: #04685249; /* สีพื้นหลัง */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* เพิ่มความชัดของเงา */
+    border-radius: 15px; /* ขอบมนเล็กน้อย */
+    padding: 25px; /* ลดระยะห่างภายในลง */
+    margin: 20px auto; /* จัดให้อยู่กลางหน้าจอ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* การเปลี่ยนแปลงเมื่อ hover */
+}
+
+.profile-container:hover {
+    transform: translateY(-8px); /* ยกตัวขึ้นเมื่อ hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* ทำให้เงาชัดขึ้นเมื่อ hover */
+}
+
+
+.profile-container:hover {
+    transform: translateY(-8px); /* ยกตัวขึ้นเมื่อ hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* เงาที่เด่นขึ้นเมื่อ hover */
+}
+
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.profile-header p {
+    font-size: 18px;
+    color: #fdfbfb;
+}
+
+.profile-details h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    color: #f7efef;
+}
+
+.profile-details p, .profile-details ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #faf8f8;
+}
+
+.profile-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.profile-details li {
+    margin-bottom: 10px;
+}
+
+.profile-details a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.profile-details a:hover {
+    text-decoration: underline;
+}
